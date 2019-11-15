@@ -1,0 +1,65 @@
+﻿回顾
+第一题：
+n=int(input("请输入一个整数："))
+sum=1
+for i in range(1,n+1):
+    sum=sum*i
+print(sum)
+
+第二题
+n=100
+sum=0
+for i in range(2,n+1):
+    if i%2==0:
+        sum+=i
+    else:
+        sum-=i
+print(sum)
+
+第三题
+r=int(input("请输入行数："))
+for i in range(r):
+    for j in range(i+1):
+        print('*',end='')
+    print()
+
+
+本节练习
+第一题：
+n=100
+sum=0
+for i in range(101):
+    if(i%2==0):
+        sum+=i
+print(sum)
+
+第二题：
+i=1
+sum=0
+while i<=100:
+    if i%2==0:
+        sum+=i
+    i=i+1
+print(sum)
+
+第三题：
+import random
+n=random.randint(1,100)
+print(n)
+a=0
+while(a<5):
+    i=int (input())
+    a=a+1
+    if(a==1 and i==n):
+        print("congrations! one shot!")
+        break
+    while(i==n):
+        print ("bingo!")
+        break
+    if (i<n):
+        print ("too small")
+    if (i>n):
+        print ("too big")
+    if(a==5):
+        print("try again!")
+        break
